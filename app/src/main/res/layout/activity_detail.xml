@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="210dp"
+            android:scaleType="fitXY"
+            android:id="@+id/movie_image_detail"
+            android:src="@drawable/money_heist"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_name_detail"
+                android:text="Money Heist"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"
+                android:layout_marginHorizontal="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_genre"
+                android:text="Genres"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_genre_detail"
+                android:text="Crime, Thriller, Action"
+                android:textSize="18sp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_rating"
+                android:text="Rating"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_rating_detail"
+                android:text="8.5"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="0dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_rating_limit"
+                android:text="/10"
+                android:textSize="18sp"
+                android:layout_marginHorizontal="2dp"
+                android:layout_marginTop="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:onClick="shareMovie"
+                android:textAllCaps="false"
+                android:textSize="12dp"
+                android:textAlignment="textStart"
+                android:drawableLeft="@drawable/share_icon"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="2dp" />
+
+                <Button
+                    android:id="@+id/movie_liked_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Like"
+                    android:onClick="likeOrUnlikeMovie"
+                    android:textAllCaps="false"
+                    android:textSize="12dp"
+                    android:textAlignment="textStart"
+                    android:drawableLeft="@drawable/fav_icon"
+                    android:layout_marginTop="2dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/storyline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/storyline"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/movie_description_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/movie_storyline"
+        />
+
+
+</LinearLayout>

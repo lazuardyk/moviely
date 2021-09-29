@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="social_width">40dp</dimen>
+    <dimen name="social_height">40dp</dimen>
+</resources>
